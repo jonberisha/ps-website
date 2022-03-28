@@ -1,0 +1,353 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #d3d3d3;
+  font-family: "Earth Orbiter", sans-serif;
+}
+
+/*targets all elements*/
+* {
+  padding: 0;
+  margin: 0;
+}
+a {
+  color: black;
+  font-family: "Earth Orbiter", sans-serif;
+  font-size: 120%;
+  text-decoration: none;
+}
+.navbar {
+  background-color: white;
+  display: flex;
+  position: sticky;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+.navbar .nav-item {
+  padding: 25px;
+  width: auto;
+}
+.navbar .nav-item:hover {
+  background-color: #d4d4d4;
+}
+/* MODAL STYLING */
+
+.flex {
+  display: flex;
+}
+.flex-item {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+img {
+  height: 500px;
+}
+.image {
+  text-align: center;
+  padding: 50px 0;
+  /* border-right: 1px solid black; */
+}
+.padding {
+  padding: 50px;
+}
+.centered {
+  text-align: center;
+}
+
+#product-info p {
+  padding: 10px;
+}
+.ps-price {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 200px;
+  font-size: 20px;
+}
+.ps-official {
+  width: 85px;
+  height: 70px;
+}
+.nav-right {
+  /* width: 85px; */
+  /* float: right;   */
+  /* margin-left: auto; */
+}
+
+.title-heading {
+  font-size: 40px;
+}
+#background-slideshow {
+  height: 760px;
+  max-height: 760px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.transparent-font {
+  font-size: 100px;
+  font-family: "SF Automaton Extended", sans-serif;
+  color: #d3d3d3;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  text-align: center;
+  margin: 0px;
+  position: relative;
+  padding-top: 25%;
+}
+.purchase-button {
+  text-align: center;
+  padding-top: 80px;
+}
+.buttons {
+  background-color: #d3d3d3;
+  border: 2px solid rgba(2, 2, 138, 0.918);
+  width: 20%;
+  color: rgba(2, 2, 138, 0.918);
+  font-family: "SF Automaton Extended", sans-serif;
+}
+.buttons:hover {
+  background-color: rgba(2, 2, 138, 0.918);
+  color: white;
+}
+
+#product-info .buttons {
+  padding: 20px 0;
+}
+.fg-button {
+  text-align: center;
+}
+.fg-button .buttons {
+  font-size: large;
+  padding: 40px 0;
+}
+#featured-games .single-div p {
+  padding-bottom: 40px;
+}
+.contact-title {
+  padding: 10px;
+}
+#Contact {
+  background-color: black;
+  color: #d3d3d3;
+  border-top: 5px solid blue;
+}
+#email {
+  border: 2px solid rgba(2, 2, 138, 0.918);
+  padding: 5px 0;
+  width: 30%;
+  background-color: #d3d3d3;
+}
+#subject {
+  background-color: #d3d3d3;
+  border: 2px solid rgba(2, 2, 138, 0.918);
+  width: 50%;
+  height: 60px;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.submit-button {
+  margin-top: 30px;
+  width: 30%;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.submit-button:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #003cff,
+    #0084ff,
+    #014280,
+    #00b7ff,
+    #00ffd5
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.submit-button:hover:before {
+  opacity: 1;
+}
+
+.submit-button:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+input,
+textarea {
+  outline: none;
+}
+.sm-icons {
+  width: 25%;
+}
+.sm-icons img {
+  width: 100%;
+  height: 90%;
+  padding-right: 30px;
+}
+.sm-icons a {
+  width: 100%;
+  padding: 10px;
+}
+.icon-item {
+  justify-content: end;
+  align-items: flex-end;
+}
+#scrollContact {
+  scroll-behavior: smooth;
+}
+.form-input{
+  display: flex;
+  flex-direction: column;
+
+}
+/* MODAL TESTING */
+/* The Modal (background) */
+.modal-issue {
+
+  display: none; /* Hidden by default */
+  position: fixed;/* Stay in place*/
+  width: 30%;
+  z-index: 2; /* Sit on top */
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 100px;
+  /* width: 100%;
+  height: 100%;  */
+  overflow: auto; /* Enable scroll if needed */
+  /* background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+} 
+
+/* The Close Button */
+.close {
+  color: rgba(2, 2, 138, 0.918);
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #a8818b;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+}
+
+
+
+/* Modal Header */
+.modal-header {
+  padding-right: 10px;
+  background-color: black;
+  height: auto;
+  text-align: right;
+  width: auto;
+}
+
+/* Modal Body */
+.modal-body {
+  padding-right: 10px;
+  background-color: white;
+  width: auto;
+}
+.modal-content{
+  overflow: hidden;
+   /* width: 50%; */
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+  
+}
+.modal-content form{
+  display: flex;
+  flex-direction: column;
+  /* padding: 20px; */
+  text-align: center;
+  align-items: center;
+  overflow: hidden;
+}
+.modal-content input{
+  padding: 10px;
+  width: 50%;
+
+}
+.modal-content label{
+  padding: 10px;
+}
+/* Add Animation */
+/* @-webkit-keyframes animatetop {
+  from {top: -300px; opacity: 0} 
+  to {top: 0; opacity: 1}
+} */
+
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+#overlay-color {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: black;
+  opacity: 0.5;
+  display: none;
+}
+.modal-body .submit-button{
+  margin-bottom: 12px;
+}
+.pfp {
+  border: 1px solid transparent;
+  border-radius: 100%;
+  width: 100%;
+  height: 100%;
+  /* padding-top: 30px; */
+}
+.pfp-div{
+  margin-top: 30px;
+  margin-bottom: 10px;
+  width: 50%;
+}
+input:focus {
+  background-color: none;
+  outline: none;
+}

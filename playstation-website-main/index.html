@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel='stylesheet' href="CSS/style.css">
+    <link href="http://fonts.cdnfonts.com/css/earth-orbiter" rel="stylesheet">  
+    <link href="http://fonts.cdnfonts.com/css/sf-automaton-extended" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-items flex">
+            <div class="nav-item"><a href="index.html">Home</a></div>
+            <div class="nav-item"><a href="newsindex.html">News</a></div>
+            <div class="nav-item"><a href="aboutindex.html">About</a></div>
+            <div class="nav-item"><a id="scrollContact"href="#Contact">Contact</a></div>
+        </div>
+        <div class="nav-right flex">
+            <img src="./assets/pslogo" class="ps-official">
+            <div class="nav-item" id="popmodule"><p>Log In</p></div>
+        </div>
+    </div>
+    
+    <!-- First section of home Page (Product Info, href Button)-->
+    <section id="product-info">
+        <div class="flex padding">
+            <div class="flex-item">
+                <div class="image">
+                    <img src="./assets/Playstation-5-games-console-transparent-background-png-image.webp"alt="test">
+                </div>
+            </div>
+            
+            <div class="flex-item right-side">
+                <h1 class="centered title-heading">PlayStation 5</h1>
+                <p class="centered">Experience lightning-fast loading with an ultra-high speed SSD, deeper immersion with support for haptic feedback, adaptive triggers and 3D Audio*, and an all-new generation of incredible PlayStation® games.</p>
+                <p class="ps-price">Starting at <b style="font-size: 50px;">$400</b></p>
+                <div class="purchase-button"><button type="button" onclick="onClickButton()" class="buttons"><span class="button-text">Purchase</span></button></div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Second section of Home Page (Featured Games, href Button)-->
+    <section id="featured-games">
+        <div class="single-div" id="background-slideshow">
+            <p class="transparent-font">EXPERIENCE THE 4K</p>
+            <div class="fg-button"><button id="modal-btn"type="button" class="buttons"><span>Browse Featured Games</span></button></div>
+        </div>
+    </section>
+        <section id="login">
+            <div id="modal"class="log-in-content">
+
+    <!-- The Modal -->
+<div id="modal-form" class="modal-issue">
+<div class="modal-content">
+    <div class="modal-header">
+        <p><span class="close">&times;</span></p>
+    </div>
+    <div class="modal-body">
+        <form>
+            <div class="pfp-div"><img class="pfp" src="assets/PS-bug-blue-9e6d5ba0329b2c480bed55a62e5aa7a5.png"></div>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Your Username..">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Your Password..">
+            <button type="button" value="Submit" class="submit-button" onclick="logIn()">Submit</button>
+        </form> 
+    </div>
+</div>
+</div>
+
+    <footer id="Contact">
+        <div class="flex padding">
+            <div class="flex-item">
+                <h3 class="contact-title">Contact</h3>
+
+                <form action="mailto:youraddr@domain.tld" method="GET" class="flex-column">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Your e-mail..">
+                
+                <label for="subject">Subject:</label>
+                <textarea id="subject" name="subject" placeholder="Write your message.."></textarea>
+
+                <button type="submit" value="Submit" class="submit-button">Submit</button>
+            </form>
+            </div>
+            <div class="flex-item icon-item">
+                <h1 style="font-size: medium;">visit our social media</h1>
+                <div class="sm-icons flex">
+                <a href="https://www.facebook.com/playstation/"><img src="assets/sm-icons/facebook-3-512.png"></a>
+                <a href="https://www.instagram.com/playstation/"><img src="assets/sm-icons/instagram-3-512.png"></a>
+                <a href="https://twitter.com/PlayStation?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="assets/sm-icons/twitter-3-512.png"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+        <div id="overlay-color"></div>
+        <script src="./JS/script.js" defer></script>
+</body>
+</html>
